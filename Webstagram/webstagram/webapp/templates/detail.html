@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail</title>
+    <!-- <style>
+        body{text-align: center;}
+    </style> -->
+</head>
+<body>
+    <h2>자세한 본문 내용입니다.</h2>
+    <br>
+    <h2>제목 : {{feed.title}}</h2>
+    <div>
+    <!-- 작성자:{{blog.writer}} -->
+    작성 날짜 : {{feed.pub_date}}
+    </div>
+    {% if feed.image %}
+    <p><img src="{{feed.image.url}}" alt=""></p>
+    {% endif %}
+    <p>자세한 본문 : {{feed.body}}</p>
+    <a href="{% url 'edit' feed.id %}">수정하기</a>
+    <a href="{% url 'delete' feed.id %}">삭제하기</a>
+</body>
+</html>

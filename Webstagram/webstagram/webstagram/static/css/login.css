@@ -1,0 +1,66 @@
+.login_container{
+    display:flex;
+    position:relative;
+    border:1px solid #DBDBDB;
+    width: 300px;
+    height: 330px;
+    margin-top:5%;
+    margin-left:auto;
+    margin-right:auto;
+    align-items:center;
+    flex-direction: column;
+}
+.instagramText{
+    padding-top:50px;
+    width:auto;
+    height:50px;
+    margin-bottom:50px;
+}
+.userLogin{
+    margin-top:3px;
+    width:250px;
+    height:30px;
+    /* background-color: #DBDBDB; */
+    border:1px solid #E2E2E2;
+    border-radius:5px;
+    background-color: #FAFAFA;
+}
+.userLogin::placeholder{
+    font-size:9px;
+    padding-left:3px;
+    padding-top:2px;
+    padding-bottom:2px;
+}
+#loginButton{
+    margin-top:10px;
+    width:260px;
+    height:30px;
+    border-radius:5px;
+    background-color:skyblue;
+    color:White;
+    border:none;
+    font-weight:bold;
+}
+.joinInsta{
+    display:flex;
+    position:relative;
+    border:1px solid #DBDBDB;
+    width: 300px;
+    height: 30px;
+    margin-top:1%;
+    margin-left:auto;
+    margin-right:auto;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+}
+.join{
+    font-size:10px;
+}
+.joinBtn{
+    font-size:10px;
+    background-color:white;
+    border:none;
+    color:blue;
+    font-weight:bold;
+}

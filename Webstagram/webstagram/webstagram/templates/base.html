@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Instagram</title>
+<link href="{% static 'css/base.css' %}" rel="stylesheet" type="text/css"/>
+<link rel="icon" href="{% static 'img/icon.png' %}">
+</head>
+<body>
+    <header>
+        <div class="left_box">
+            <div class="favicon_frame">
+                <!-- <img class="faviconFrame" src="{% static 'img/line_favicon.png' %}" alt="인스타 로고"/> -->
+                <a href="{% url 'feed' %}"><img class="faviconFrame" src="{% static 'img/line_favicon.png' %}"></a>
+            </div>
+            <div class="line">
+                <!-- <img class="logo" src="{% static 'img/logo_text.png' %}" alt="인스타 글씨"/> -->
+                <a href="{% url 'feed' %}"><img class="logo" src="{% static 'img/logo_text.png' %}"></a>
+            </div>
+        </div>
+        <div class="right_box">
+            <div class="heart_box">
+                <!-- <img class="heart" src="{% static 'img/new.png' %}" alt="글 작성"/> -->
+                <a href="{% url 'new' %}"><img class="heart" src="{% static 'img/new.png' %}"></a>
+            </div>
+            <div class="myInfo_box">
+                <!-- <img class="myInfo" src="{% static 'img/myinfo.png' %}" alt="내 프로필"/> -->
+                <a href="{% url 'profile' %}"><img class="myInfo" src="{% static 'img/myinfo.png' %}"></a>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+</body>
+</html>

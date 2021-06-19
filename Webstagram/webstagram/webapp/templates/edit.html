@@ -1,0 +1,9 @@
+<h1>Edit your feed</h1>
+
+<form action="{% url  'update' feed.id %}" method="post">
+    {%csrf_token%}
+    <p>제목 : <intput type="text" name="title" value="{{feed.title}}"></p>
+    <p>작성자 : <input type="text" name="writer" value="{{feed.writer}}"></p>
+    본문 : <textarea name="body" id="" cols="30" rows="10">{{feed.body}}</textarea>
+    <button type="submit">submit</button>
+</form>
